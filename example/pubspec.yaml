@@ -1,0 +1,15 @@
+name: grumpy_cli_example
+publish_to: none
+environment:
+  sdk: ^3.11.4
+dependencies:
+  grumpy_cli:
+    path: ..
+  grumpy_io:
+    git: https://github.com/necodeIT/grumpy_io.git
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.6
+  build_runner: ^2.11.1
+  grumpy_gen:
+    git: https://github.com/necodeIT/grumpy_gen.git

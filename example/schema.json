@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/setup-demo/schema.json",
+  "title": "CLI configuration",
+  "$defs": {
+    "global": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "$schema": {
+          "type": "string",
+          "description": "Editor schema reference."
+        },
+        "checkForUpdates": {
+          "type": "boolean",
+          "description": "Whether the tool may check for updates.",
+          "default": true
+        },
+        "port": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 65535,
+          "description": "Port on which the application listens.",
+          "default": 8080,
+          "examples": [
+            8080,
+            9000
+          ]
+        }
+      }
+    },
+    "local": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "$schema": {
+          "type": "string",
+          "description": "Editor schema reference."
+        },
+        "checkForUpdates": {
+          "type": "boolean",
+          "description": "Whether the tool may check for updates.",
+          "default": true
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Enabled optional features.",
+          "default": []
+        },
+        "port": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 65535,
+          "description": "Port on which the application listens.",
+          "default": 8080,
+          "examples": [
+            8080,
+            9000
+          ]
+        },
+        "projectName": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Display name of this project.",
+          "default": null
+        }
+      }
+    }
+  },
+  "anyOf": [
+    {
+      "$ref": "#/$defs/global"
+    },
+    {
+      "$ref": "#/$defs/local"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+dartdoc:
+  categories:
+    application:
+      markdown: lib/src/README.md
+      name: Application
+    shared:
+      markdown: lib/src/shared/README.md
+      name: Shared
+    arguments:
+      markdown: lib/src/arguments/README.md
+      name: Arguments
+    config:
+      markdown: lib/src/config/README.md
+      name: Config
+    module:
+      markdown: lib/src/module/README.md
+      name: Module
+    presentation:
+      markdown: lib/src/presentation/README.md
+      name: Presentation
+    routing:
+      markdown: lib/src/routing/README.md
+      name: Routing
+    prompting:
+      markdown: lib/src/prompting/README.md
+      name: Prompting
+    terminal:
+      markdown: lib/src/terminal/README.md
+      name: Terminal

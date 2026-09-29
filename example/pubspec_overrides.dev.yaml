@@ -1,0 +1,9 @@
+dependency_overrides:
+  grumpy:
+    path: ../../grumpy
+  grumpy_annotations:
+    path: ../../grumpy_annotations
+  grumpy_io:
+    path: ../../grumpy_io
+  grumpy_gen:
+    path: ../../grumpy_gen

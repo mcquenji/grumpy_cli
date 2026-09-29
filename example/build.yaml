@@ -1,0 +1,6 @@
+targets:
+  $default:
+    builders:
+      grumpy_gen:grumpy_config:
+        options:
+          schema_uri: https://example.com/setup-demo/schema.json
