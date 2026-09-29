@@ -7,6 +7,7 @@ library;
 export 'package:grumpy/grumpy.dart';
 export 'src/arguments/arguments.dart';
 export 'src/shared/shared.dart';
+export 'src/terminal/terminal.dart';
 
 export 'package:grumpy_annotations/grumpy_annotations.dart'
     show Config, ConfigField, ConfigScope, config, localConfig;
