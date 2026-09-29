@@ -1,0 +1,26 @@
+include: package:lints/recommended.yaml
+plugins:
+  grumpy_lints:
+    path: ../grumpy_lints
+    diagnostics:
+      must_call_in_constructor: true
+      abstract_classes_should_set_log_group: true
+      concrete_classes_should_set_log_tag: true
+      base_class: true
+      domain_factory_from_di: true
+      prefer_domain_di_factory: true
+      lifecycle_mixin_requires_singleton: true
+      leaf_preview_must_not_use_injectables_or_navigation: true
+analyzer:
+  exclude:
+    - '**/*.g.dart'
+  errors:
+    public_member_api_docs: error
+    comment_references: error
+linter:
+  rules:
+    public_member_api_docs: true
+    comment_references: true
+    document_ignores: true
+    prefer_single_quotes: true
+    unawaited_futures: true

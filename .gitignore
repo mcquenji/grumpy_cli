@@ -1,0 +1,10 @@
+.dart_tool/
+.fvm/
+pubspec.lock
+pubspec_overrides.yaml
+
+# Generated Dart API reference
+doc/api/
+
+# Analyzer plugin diagnostics
+grumpy_lints.log
