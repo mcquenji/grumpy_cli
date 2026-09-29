@@ -2,7 +2,7 @@ name: grumpy_cli
 description: Typed command-line applications built on Grumpy modules and routing.
 version: 0.1.0
 publish_to: none
-repository: https://github.com/necodeIT/grumpy_cli
+repository: https://github.com/mcquenji/grumpy_cli
 environment:
   sdk: ^3.10.0
 dependencies:
@@ -10,11 +10,11 @@ dependencies:
   get_it: ^8.2.0
   grumpy:
     git:
-      url: https://github.com/necodeIT/grumpy.git
+      url: https://github.com/mcquenji/grumpy.git
   grumpy_annotations:
-    git: https://github.com/necodeIT/grumpy_annotations.git
+    git: https://github.com/mcquenji/grumpy_annotations.git
   grumpy_io:
-    git: https://github.com/necodeIT/grumpy_io.git
+    git: https://github.com/mcquenji/grumpy_io.git
   meta: ^1.17.0
   path: ^1.9.1
   yaml: ^3.1.3
