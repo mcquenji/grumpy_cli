@@ -5,9 +5,13 @@
 library;
 
 export 'package:grumpy/grumpy.dart';
+export 'src/app.dart';
 export 'src/arguments/arguments.dart';
 export 'src/config/config.dart';
+export 'src/module/module.dart';
+export 'src/presentation/presentation.dart';
 export 'src/prompting/prompting.dart';
+export 'src/routing/routing.dart';
 export 'src/shared/shared.dart';
 export 'src/terminal/terminal.dart';
 
