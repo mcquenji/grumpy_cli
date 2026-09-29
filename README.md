@@ -130,3 +130,20 @@ Early parser/config-loading dependencies must work before module activation and 
 Command output goes to stdout; prompts and diagnostics go to stderr. Standard exit codes are success `0`, execution failure `1`, usage error `64`, and cancellation `130`.
 
 `grumpy_lints` and public API documentation checks are enabled. Run `fvm dart analyze --fatal-infos`, `fvm dart test`, and the example's schema `--check` helper. CI should regenerate with build_runner and reject changes to committed generated artifacts.
+
+## Sister packages
+
+Explore the other packages in the Grumpy ecosystem:
+
+| Package | Purpose |
+| --- | --- |
+| [grumpy](https://github.com/mcquenji/grumpy) | Core modules, repositories, routing, and lifecycle management. |
+| [grumpy_annotations](https://github.com/mcquenji/grumpy_annotations) | Annotations for architecture rules and code generation. |
+| [grumpy_flutter](https://github.com/mcquenji/grumpy_flutter) | Flutter components, screens, routing, and responsive views. |
+| [grumpy_io](https://github.com/mcquenji/grumpy_io) | File system, networking, and other IO utilities. |
+| [grumpy_gen](https://github.com/mcquenji/grumpy_gen) | Route and typed configuration code generation. |
+| [grumpy_lints](https://github.com/mcquenji/grumpy_lints) | Analyzer rules for Grumpy architecture conventions. |
+| [grumpy_context](https://github.com/mcquenji/grumpy_context) | Project discovery and shared generation configuration. |
+| [grumpy_bricks](https://github.com/mcquenji/grumpy_bricks) | Mason bricks for generating Grumpy architecture units. |
+| [grumpy_posthog](https://github.com/mcquenji/grumpy_posthog) | PostHog integration package scaffold (not yet implemented). |
+| [grumpy_sentry](https://github.com/mcquenji/grumpy_sentry) | Sentry integration package scaffold (not yet implemented). |
